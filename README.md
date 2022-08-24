@@ -2,38 +2,39 @@
 
 ![image](https://user-images.githubusercontent.com/16539849/173646901-81144afc-36aa-418c-be7f-70477b627ced.png)
 
-Remix is an open-source, web and desktop Integrated Development Environment (IDE) for Ethereum development. It is the easiest development tool to get started with building on Ethereum, and has a huge collection of plugins to extend its experience. 
+Remix est un environnement de développement intégré (IDE) open-source, pour le web et le bureau, destiné au développement Ethereum. C'est l'outil de développement le plus facile à utiliser pour commencer à construire sur Ethereum, et il dispose d'une énorme collection de plugins pour étendre son expérience. 
 
 <Quiz questionId="512d993c-ecb0-4ecd-b077-8f7eec505bec" />
 
-Remix helps you write Solidity code directly in the browser, and has tools for testing, debugging, and deploying your smart contract to the blockchain.
+Remix vous aide à écrire du code Solidity directement dans le navigateur, et dispose d'outils pour tester, déboguer et déployer votre contrat intelligent sur la blockchain.
 
-You can visit Remix at [https://remix.ethereum.org/](https://remix.ethereum.org/)
+
+Vous pouvez visiter Remix à l'adresse [https://remix.ethereum.org/](https://remix.ethereum.org/)
 
 <Quiz questionId="1cbd33c7-d0ae-445e-b70b-0888666e2a9d" />
 
 ## Navigating Remix
 
-When you first open Remix, you will be greeted with a screen like this.
+Lorsque vous ouvrez Remix pour la première fois, vous êtes accueilli par un écran comme celui-ci.
 ![](https://i.imgur.com/4RqBi40.png)
 
-In the left sidebar, you can switch between the `File Explorer`, the `Solidity Compiler`, the `Deployer`, and an `Extensions` panel.
+Dans la barre latérale de gauche, vous pouvez basculer entre les éléments suivants `File Explorer`, le `Solidity Compiler`, le `Deployer`, et un panneau `Extensions`.
 
-In the bottom, there is an output panel, which displays output from your compilation, your deployments, and your function calls. 
+En bas, il y a un panneau de sortie, qui affiche les résultats de votre compilation, de vos déploiements et de vos appels de fonction. 
 
-In the middle is where you will edit code. Currently it displays the home screen of the IDE, but once we open a file it will become the code editor.
+Au milieu se trouve l'endroit où vous allez éditer du code. Actuellement, il affiche l'écran d'accueil de l'IDE, mais dès que nous ouvrirons un fichier, il deviendra l'éditeur de code.
 
 ## Remix Workflow
 
-In the sidebar, if you look under the `contracts` folder - Remix ships with 3 basic smart contracts to help people learn Solidity. Let's take a look at `1_Storage.sol`.
+Dans la barre latérale, si vous regardez sous la rubrique `contracts`  - Remix est livré avec 3 contrats intelligents de base pour aider les gens à apprendre Solidity. Jetons un coup d'œil à `1_Storage.sol`.
 
 ![](https://i.imgur.com/OdGQABf.png)
 
-We can see the code editor now.
+Nous pouvons voir l'éditeur de code maintenant.
 
-In the file explorer, we can also see options to create a new file or directory, upload local files, or import files from Github.
+Dans l'explorateur de fichiers, nous pouvons également voir des options pour créer un nouveau fichier ou répertoire, télécharger des fichiers locaux ou importer des fichiers de Github.
 
-To compile our contracts, we shift over to the `Solidity Compiler` tab, and we will see something like this in the sidebar.
+Pour compiler nos contrats, nous nous déplaçons sur l'onglet `Solidity Compiler`,  et nous verrons quelque chose comme ceci dans la barre latérale.
 
 ![](https://i.imgur.com/kr0a26J.png)
 
