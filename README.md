@@ -38,57 +38,57 @@ Pour compiler nos contrats, nous nous déplaçons sur l'onglet `Solidity Compile
 
 ![](https://i.imgur.com/kr0a26J.png)
 
-Here, we can choose which `Compiler Version` we want, which smart-contract programming language we are using (mostly you will just be using Solidity), and some further configuration options.
+Ici, nous pouvons choisir quel`Compiler Version`que nous voulons, le langage de programmation des contrats intelligents que nous utilisons (la plupart du temps, vous utiliserez Solidity), et quelques options de configuration supplémentaires.
 
-Note: The other programming language listed in Remix, `Yul`, is a lower-level language. It is meant for intermediate compilation, and is closer to the hardware than Solidity is. 99% of the time you will not be coding in Yul. Read more about Yul here - [https://docs.soliditylang.org/en/v0.8.9/yul.html](https://docs.soliditylang.org/en/v0.8.9/yul.html)
+Remarque : L'autre langage de programmation figurant dans Remix, `Yul`, est un langage de plus bas niveau. Il est destiné à la compilation intermédiaire et est plus proche du matériel que Solidity. Dans 99% des cas, vous ne coderez pas en Yul. Pour en savoir plus sur Yul, cliquez ici - [https://docs.soliditylang.org/en/v0.8.9/yul.html](https://docs.soliditylang.org/en/v0.8.9/yul.html)
 
-Clicking `Compile 1_Storage.sol` will compile the contract and make it ready for deployment.
+En cliquant sur `Compile 1_Storage.sol` compilera le contrat et le rendra prêt à être déployé..
 
 ![](https://i.imgur.com/KieTxyw.png)
 
-Moving over to the `Deployment` tab, we will see something like this in the sidebar.
+En passant à l'onglet `Deployment`, nous verrons quelque chose comme ceci dans la barre latérale.
 
 ![](https://i.imgur.com/NzlQ3kM.png)
 
 <Quiz questionId="be553003-ef98-4517-88ac-1cea9c4a4008" />
 
-First thing to note here is the `Environment`. Remix ships with a `Javascript VM` - which is a simulator of the Ethereum Virtual Machine (EVM) in the browser. This allows for fast testing and debugging of your smart contract, as long as your contract doesn't depend on another contract deployed to a real Ethereum network. Thankfully, our Storage contract does not, so we can test it right here in the Javascript VM.
+La première chose à noter ici est l'`Environment`. Remix est livré avec une `Javascript VM` - qui est un simulateur de la machine virtuelle Ethereum (EVM) dans le navigateur. Cela permet de tester et de déboguer rapidement votre contrat intelligent, tant que celui-ci ne dépend pas d'un autre contrat déployé sur un véritable réseau Ethereum. Heureusement, ce n'est pas le cas de notre contrat de stockage, nous pouvons donc le tester ici même dans la VM Javascript.
 
-To deploy to actual networks, we will want to change our `Environment` to one of the other options listed there (more on this later).
+Pour déployer sur les réseaux réels, nous voudrons changer notre `Environment` à l'une des autres options proposées (nous y reviendrons plus tard).
 
 <Quiz questionId="b4e0f228-abc7-4384-ba92-2839fe77ed11" />
 
-Along with the `Javascript VM`, Remix creates a set of fake accounts, all loaded up with 100 ETH, to test with. 
+Avec la `Javascript VM`,  Remix crée un ensemble de faux comptes, tous chargés de 100 ETH, pour les tests. 
 
-Select the `1_Storage.sol` contract from the dropdown, and click `Deploy` to deploy the contract. 
+Sélectionnez le contrat `1_Storage.sol` dans la liste déroulante, et cliquez sur `Deploy` pour déployer le contrat. 
 
 ![](https://i.imgur.com/mjfULEw.png)
 
-Once the contract is deployed, you will see it under the `Deployed Contracts` section - where you can now call functions on your smart contract.
+Une fois le contrat déployé, vous le verrez sous la rubrique `Deployed Contracts` - où vous pouvez maintenant appeler des fonctions sur votre contrat intelligent.
 
-Calling the `retrieve` function will return a value of `0` right now, which is the default value for integers in Solidity. 
+Appeler la fonction `retrieve`  retournera une valeur de `0` pour l'instant, qui est la valeur par défaut des entiers dans Solidity. 
 
 ![](https://i.imgur.com/B0tBUt0.png)
 
-Also, we will see in the Output panel some logs about the call to `Storage.retrieve` which is our function.
+De plus, nous verrons dans le panneau Output quelques logs concernant l'appel à `Storage.retrieve` qui est notre fonction.
 
-Now, let's try calling the `store` value with the number `5`.
+Maintenant, essayons d'appeler la valeur `store` avec le nombre `5`.
 
 ![](https://i.imgur.com/m3BwJCc.png)
 
-Again, we see some logs in the output panel about the call to `Storage.store`. Now, if we try to `retrieve` again, the output will be `5`. 
+Encore une fois, nous voyons quelques logs dans le panneau de sortie à propos de l'appel à `Storage.store`. Maintenant, si on essaie encore de `retrieve`, tle résultat sera `5`. 
 
 ![](https://i.imgur.com/8PdOvHf.png)
 
 
-**NOTE** - None of these function calls/transactions we made opened up your digital wallet (Metamask). This is because we are testing in the `Javascript VM` currently, and that is just a simulator working with fake accounts. When deploying to a real network (Testnet or mainnet), transactions need to be confirmed and signed through your digital wallet. 
+**NOTE** aAucun de ces appels de fonction/transactions que nous avons effectués n'a ouvert votre portefeuille numérique (Metamask). Ceci est dû au fait que nous testons actuellement dans la `Javascript VM`,et il ne s'agit que d'un simulateur fonctionnant avec de faux comptes. Lors du déploiement sur un réseau réel (Testnet ou mainnet), les transactions doivent être confirmées et signées par le biais de votre portefeuille numérique. 
 
 ## Recommended
 
-To learn more about Remix, we recommend:
+Pour en savoir plus sur Remix, nous vous recommandons :
 
-- Go through the documentation at [Remix IDE Docs](https://remix-ide.readthedocs.io/en/latest/)
-- Play around with the default smart contracts that Remix ships with to get a handle on the workflow
+- Consultez la documentation à l'adresse [Remix IDE Docs](https://remix-ide.readthedocs.io/en/latest/)
+- Jouez avec les contrats intelligents par défaut fournis avec Remix pour vous familiariser avec le workflow
 
 ## DYOR Questions
 <Quiz questionId="1f9f5213-43dc-4e2b-9daa-64dec004af6e" />
